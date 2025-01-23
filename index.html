@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Developer Portfolio</title>
+  <!-- external css link add here -->
+   <link rel="stylesheet" href="index.css">
+  <!-- tailwind css link add here -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome cdn link add here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-black text-white">
+  <!-- Navbar Section -->
+  <header class="fixed top-0 left-0 w-full bg-black shadow-md z-50">
+    <section class="flex justify-between items-center px-6 py-4 md:px-12">
+        <h1 class="text-xl font-bold">Portfolio</h1>
+        <nav class="">
+      <!-- Mobile Menu Toggle -->
+            <div class="relative md:hidden">
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+                <label for="menu-toggle" class="text-gray-400 cursor-pointer">
+                <i class="fas fa-bars"></i>
+                </label>
+        <!-- Mobile Menu -->
+                <div class="absolute left-0 top-full mt-2 bg-gray-800 w-48 p-4 rounded-md shadow-lg hidden peer-checked:block">
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">Home</a>
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">Skills</a>
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">Services</a>
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">Projects</a>
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">About me</a>
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">Blog</a>
+                    <a href="#" class="block py-2 text-gray-400 hover:text-white">Contact</a>
+                </div>
+            </div>
+
+      <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6 text-gray-400">
+                <li><a href="#" class="hover:text-white">Home</a></li>
+                <li><a href="#skills" class="hover:text-white">Skills</a></li>
+                <li><a href="#about" class="hover:text-white">About me</a></li>
+                <li><a href="#blog" class="hover:text-white">Education</a></li>
+                <li><a href="#contact" class="hover:text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="flex flex-col items-center justify-center h-screen text-center px-6">
+      <div class="relative w-40 h-40 md:w-64 md:h-64 bg-black overflow-hidden border-4 border-gray-600 mb-6">
+        <img src="assets/dp.jpg" alt="Profile" class="w-50 h-50 object-cover">
+      </div>
+      <h2 class="text-lg md:text-xl">Hello, I'm Sithi Roy</h2>
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">Web Developer</h1>
+      <p class="text-gray-400 max-w-md">
+        I'm a Front-end Developer, with over 2 months of professional experience.
+      </p>
+      <div class="flex space-x-4 mt-6">
+        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </section>
+
+    <!-- Skill section  -->
+    <section id="skills" class="bg-blue-50 flex text-center justify-center items-center min-h-screen">
+        <div class="w-full max-w-6xl p-4">
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">Skills</h1>
+            <h2 class="text-xl font-semibold text-blue-600 mb-6">MY TOP SKILLS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Skill Card -->
+              <div class="bg-white shadow rounded-lg flex items-center p-4 space-x-4">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-gray-800">HTML</h3>
+                </div>
+              </div>
+              <!-- Skill Card -->
+              <div class="bg-white shadow rounded-lg flex items-center p-4 space-x-4">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-gray-800">CSS <br>(Tailwindcss, Bootstrap, DaisyUi)</h3>
+                </div>
+              </div>
+              <!-- Skill Card -->
+              <div class="bg-white shadow rounded-lg flex items-center p-4 space-x-4">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-gray-800">JavaScript</h3>
+                </div>
+              </div>
+              <!-- Skill Card -->
+              <div class="bg-white shadow rounded-lg flex items-center p-4 space-x-4">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="" class="w-12 h-12">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-gray-800">Figma</h3>
+                </div>
+              </div>
+              <!-- Skill Card -->
+              <div class="bg-white shadow rounded-lg flex items-center p-4 space-x-4">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" class="w-12 h-12">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-gray-800">Node.js</h3>
+                </div>
+              </div>
+              <!-- Skill Card -->
+              <div class="bg-white shadow rounded-lg flex items-center p-4 space-x-4">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" class="w-12 h-12">
+                <div class="flex-1">
+                  <h3 class="text-lg font-semibold text-gray-800">React.js</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <!-- About section -->
+    <section id="about"class="bg-gray-50 text-gray-800 font-sans">
+        <div class="max-w-4xl mx-auto p-6">
+          <!-- About Me Section -->
+          <section class="mb-10">
+            <h1 class="text-3xl font-bold mb-4 text-center">About Me</h1>
+            <p>
+              I am a passionate and detail-oriented junior web developer with a strong foundation in front-end and back-end technologies. I have experience working with HTML, CSS, JavaScript, and frameworks like React and Node.js. My focus is on creating clean, user-friendly websites and web applications that solve real-world problems.
+            </p>
+          </section>
+          <section>
+              <div class="mt-6 space-y-4">
+                  <div class="flex justify-between">
+                      <span class="font-semibold">Age:</span>
+                      <span class="text-gray-400">23</span>
+                  </div>
+                  <div class="flex justify-between">
+                      <span class="font-semibold">Freelance:</span>
+                      <span class="text-green-500">Available</span>
+                  </div>
+                  <div class="flex justify-between">
+                      <span class="font-semibold">Address:</span>
+                      <span class="text-gray-400">Bangladesh</span>
+                  </div>
+                  <div class="flex justify-between">
+                      <span class="font-semibold">E-mail:</span>
+                      <span class="text-gray-400">sithiroy89@gmail.com</span>
+                  </div>
+              </div>
+          </section>
+      
+          <!-- Education Section -->
+          <section id="education" class="mt-8 text-center">
+            <h2 class="text-2xl font-bold mb-4">Education</h2>
+            <div class="p-6 bg-white shadow rounded-lg">
+                <h3 class="text-xl font-semibold">BSC in Physics</h3>
+                <p class="text-gray-500">National Versity</p>
+            </div>
+          </section>
+          <section>
+              <div class="mt-6 text-center">
+                  <a href="#" class="bg-green-500 text-black px-4 py-2 rounded hover:bg-green-400 transition">
+                      Download CV
+                  </a>
+              </div>
+          </section>
+        </div>
+    </section>
+    <!-- contact section -->
+    <section id="contact"class="bg-black text-white min-h-screen flex items-center justify-center">
+        <div class="w-full max-w-lg bg-blue-800 p-6 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold mb-2">Contact Me</h1>
+            <p class="text-lg font-semibold mb-6">Get In Touch</p>
+            <form action="" method="POST" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full mt-1 p-2 bg-blue-700 text-white border border-blue-600 rounded focus:ring focus:ring-blue-500 focus:outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-medium">Email Id</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full mt-1 p-2 bg-blue-700 text-white border border-blue-600 rounded focus:ring focus:ring-blue-500 focus:outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full mt-1 p-2 bg-blue-700 text-white border border-blue-600 rounded focus:ring focus:ring-blue-500 focus:outline-none"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-2 bg-gray-500 text-white font-semibold rounded hover:bg-blue-500 focus:ring focus:ring-yellow-300 focus:outline-none"
+              >
+                Submit
+              </button>
+            </form>
+            <div class="mt-8 text-sm space-y-2">
+              <div class="flex items-center">
+                <span class="material-icons text-yellow-400 mr-2">email</span>
+                <p>sithiroy89@gmail.com</p>
+              </div>
+              <div class="flex items-center">
+                <span class="material-icons text-yellow-400 mr-2">instagram</span>
+                <p>@sithi-Roy</p>
+              </div>
+            </div>
+          </div>
+    </section>
+  </main>
+
+  <footer class="py-6 text-center text-gray-400 text-sm">
+    © 2025 Sithi Roy. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
